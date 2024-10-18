@@ -98,25 +98,24 @@ h6 {
   right: 0;
   background-color: var(--nav-color);
   z-index: 9999;
+  padding: 10px;
 }
 
 .navbar-content {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
 }
 
 .logo p {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   color: var(--text-color-header);
 }
 
 .navbar-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none; /* Hidden by default on mobile */
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -124,18 +123,34 @@ h6 {
   padding: 10px;
 }
 
-.navbar-list li:hover {
-  border-bottom: 2px solid var(--primary-color);
-}
-
 .navbar-link {
-  margin: 20px;
   color: var(--text-color-header);
   font-size: 17px;
   font-weight: 600;
 }
 
-/* dark mode */
+.hamburger {
+  display: block;
+  cursor: pointer;
+  color: var(--text-color-header);
+}
+
+.hamburger i {
+  font-size: 24px;
+}
+
+.navbar-darkMode {
+  align-self: center;
+  cursor: pointer;
+}
+
+/* .dark-icon,
+.light-icon {
+  font-size: 20px;
+  color: var(--text-color-header);
+} */
+
+/*  */
 
 .navbar-darkMode {
   align-self: center;
@@ -158,7 +173,6 @@ h6 {
 #darkModeToggle:checked ~ .dark-icon {
   display: none;
 }
-
 /* navbar end */
 
 /* hero section start */

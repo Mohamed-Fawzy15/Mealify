@@ -152,6 +152,29 @@
     width: 70%;
     margin: auto;
   }
+
+  @media (min-width: 768px) {
+    .navbar-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hamburger {
+      display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    .logo p {
+      font-size: 30px;
+    }
+  }
+
+  /* Toggle for mobile menu */
+  .navbar-list.active {
+    display: flex;
+  }
 }
 
 /* lg */
